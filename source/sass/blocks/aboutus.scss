@@ -1,0 +1,40 @@
+.aboutus {
+  position: relative;
+}
+
+.aboutus__container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.aboutus__text {
+  text-align: center;
+  position: absolute;
+  padding: 110px 295px 120px;
+  width: 100%;
+  left: 0;
+  top: 0;
+
+  @include vp-1365 {
+    padding: 92px 50px;
+  }
+
+  @include vp-767 {
+    padding: 55px 36px;
+  }
+}
+
+.aboutus__pseudo-title {
+  font-size: 32px;
+  line-height: 1.25em;
+  font-family: $ff-raleway;
+  margin: 0 auto 42px;
+
+  @include vp-767 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 26px;
+  }
+}
+
+.aboutus__link {}
