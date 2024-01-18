@@ -1,0 +1,45 @@
+.bestseller {
+  position: relative;
+  height: 312px;
+  min-width: 230px;
+  max-width: 230px;
+
+  @include vp-767 {
+    min-width: unset;
+    max-width: unset;
+  }
+}
+
+.bestseller__image-wrapper {
+
+}
+
+.bestseller__text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 24px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+  @include vp-767 {
+    padding-bottom: 32px;
+  }
+}
+
+.bestseller__name {
+  font-size: 16px;
+}
+
+.bestseller__info {
+  font-size: 13px;
+  color: #9a9da0;
+}
+
+.bestseller__link {
+  font-size: 13px;
+  text-decoration: underline;
+}

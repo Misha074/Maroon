@@ -36,6 +36,12 @@
   }
 }
 
+@mixin list-reboot {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 // Desktop first
 
 @mixin vp-1365 {

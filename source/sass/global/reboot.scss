@@ -15,9 +15,10 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: $fz-default;
-  line-height: 24px;
-  font-family: $ff-placeholder;
-  color: $color-default-black;
+  line-height: 1.45em;
+  // font-family: $ff-placeholder;
+  font-family:   $ff-mplus-1p;
+  color: $color-midnight;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,6 +26,10 @@ html {
   text-rendering: optimizeLegibility;
   // если по прежнему есть проблемы с выравниванием
   // https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
+
+  @include vp-767 {
+    font-size: 16px;
+  }
 }
 
 body {
@@ -34,9 +39,23 @@ body {
   background-color: $color-default-white;
 }
 
+h2 {
+  font-size: 32px;
+  line-height: 1.3em;
+  font-family: $ff-raleway;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  @include vp-767 {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+}
+
 a {
-  color: $color-default-black;
   text-decoration: none;
+  color: $color-midnight;
 }
 
 img,

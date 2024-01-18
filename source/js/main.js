@@ -1,6 +1,11 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {initBestsellersSwiper} from './modules/swiper-bestesselrs/swiper-bestsellers';
+import {closeMenu} from './modules/nav-toggle/nav-toggle';
+import {paintHeader} from './modules/header-colored/header-colored';
+import './modules/leaflet/leaflet';
+import './vendor/swiper';
 
 // ---------------------------------
 
@@ -10,6 +15,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  initBestsellersSwiper();
+  paintHeader();
+  closeMenu();
 
   // Modules
   // ---------------------------------

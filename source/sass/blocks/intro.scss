@@ -1,0 +1,97 @@
+.intro {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.intro__background-wrapper {
+  height: 650px;
+  overflow: hidden;
+  width: 100%;
+
+  @include vp-1365 {
+    height: 550px;
+  }
+
+  @include vp-767 {
+    height: 546px;
+  }
+}
+
+.intro__container {
+  position: absolute;
+  top: 131px;
+  padding-top: 0;
+
+  @include vp-767 {
+    top: 72px;
+  }
+}
+
+.intro__text {
+  margin: 0 auto;
+  margin-top: 68px;
+  width: fit-content;
+  max-width: 275px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include vp-1365 {
+    margin-top: 35px;
+  }
+
+  @include vp-767 {
+    position: static;
+    transform: none;
+    margin-bottom: 35px;
+  }
+}
+
+.intro__logo {
+  font-size: 58px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  @include vp-1365 {
+    font-size: 54px;
+  }
+
+  @include vp-767 {
+    font-size: 42px;
+  }
+}
+
+.intro__title {
+  font-size: 18px;
+  line-height: 1.45em;
+  font-weight: 400;
+  margin-top: 17px;
+  margin-bottom: 33px;
+
+  @include vp-767 {
+    font-size: 16px;
+    margin-top: 11px;
+    margin-bottom: 23px;
+  }
+}
+
+.intro__cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
+
+  @include vp-1365 {
+    padding: 0;
+    gap: 187px;
+  }
+
+  @include vp-767 {
+    gap: 30px;
+  }
+}
+
+.intro__card {
+
+}

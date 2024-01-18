@@ -1,8 +1,39 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  font-family: "mplus-1p";
 
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+  src: url("../fonts/m-plus-1p-v28-cyrillic-ext_latin-regular.woff2") format(woff2),
+  url("../fonts/m-plus-1p-v28-cyrillic-ext_latin-regular.woff") format(woff);
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "mplus-1p";
+
+  font-display: swap;
+  src: url("../fonts/m-plus-1p-v28-cyrillic-ext_latin-500.woff2") format(woff2),
+  url("../fonts/m-plus-1p-v28-cyrillic-ext_latin-500.woff") format(woff);
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "raleway";
+
+  font-display: swap;
+  src: url("../fonts/raleway-v29-cyrillic-ext_latin-regular.woff2") format(woff2),
+  url("../fonts/raleway-v29-cyrillic-ext_latin-regular.woff") format(woff);
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "raleway";
+
+  font-display: swap;
+  src: url("../fonts/raleway-v29-cyrillic-ext_latin-500.woff2") format(woff2),
+  url("../fonts/raleway-v29-cyrillic-ext_latin-500.woff") format(woff);
 }

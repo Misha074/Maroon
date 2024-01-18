@@ -1,0 +1,29 @@
+.header-buttons {
+  display: flex;
+  gap: 10px;
+
+  @include vp-1365 {
+    order: 3;
+  }
+
+  svg {
+    @include vp-767 {
+      width: 13px;
+      height: 16px;
+    }
+  }
+}
+
+.header-buttons__button {
+  border: none;
+  padding: 10px;
+  background-color: transparent;
+
+  @include vp-767 {
+    padding: 5px;
+  }
+}
+
+.header-buttons__button:last-child {
+  padding-right: 0;
+}

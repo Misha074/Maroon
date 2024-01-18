@@ -1,0 +1,22 @@
+.collage {
+  @include list-reboot;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: fit-content;
+
+  @include vp-1365 {
+    grid-template-columns: auto auto;
+  }
+}
+
+.collage__item {
+  width: fit-content;
+}
+
+.collage__item--disappear {
+  @include vp-1365 {
+    display: none;
+  }
+}
+
+.collage__image-wrapper {}
